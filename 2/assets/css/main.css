@@ -1,0 +1,147 @@
+body,
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+body+* {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.content-container {
+    width: 700px;
+    margin-left: calc((100% - 700px) / 2);
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgba(250, 250, 255, 0.926);
+}
+
+.content-container p+p {
+    margin-bottom: 25px;
+}
+.content-container > ul {
+
+    margin-left: 70px;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+
+.content-container > ul li::before{
+    content: "+";
+    color: #fff;
+    background-color: green;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    margin-right: 10px;
+    height: 1.1em;
+    width: 0.5em;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+
+.content-container table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.content-container table {
+    margin-bottom: 25px;
+}
+
+.content-container table tr{
+    background-color: rgb(233, 240, 249);
+    
+}
+
+.content-container table tr:nth-child(even) {
+    background-color: rgb(217, 232, 252);
+    
+}
+
+.content-container table th{
+    border-radius: 10px;
+    background-color: rgb(140, 165, 250);
+    color: #fff;
+}
+
+.content-container table td {
+    padding: 5px 10px;
+}
+
+.content-container .form-holder{
+    width: 450px;
+    border: 1px solid black;
+}
+
+.content-container .form-holder .form-title {
+    margin-left: 20px;
+    width: fit-content;
+    position: relative;
+    top: -31px;
+    background-color: #fff;
+}
+
+.form-holder  {
+    padding: 10px;
+}
+.form-holder form{
+    padding: 10px;
+    position: relative;
+}
+
+.form-holder form>*{
+    margin-bottom: 7px;
+}
+
+.form-holder>form input, select{
+    position: absolute;
+    
+    left: 80px;
+} 
+
+form>div {
+    position: absolute;
+    top: 100px;
+    left: 222px;
+}
+
+.form-holder form input[type="radio"] {
+    position: static;
+}
+
+.form-holder form input, select{
+    margin-left: 150px;
+}
+
+.form-holder input[type="radio"] {
+    display: inline;
+    margin-left: 10px;
+}
+
+.content-container .register-btn{
+    color: #fff;
+    background-color: green;
+    border-radius: 14px;
+    font-weight: bold;
+    padding: 3px 9px;
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
