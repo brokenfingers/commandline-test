@@ -1,0 +1,90 @@
+body,
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+body>div{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image:url(../img/YLFTB01-HT12CY2716A01-Zambia-White-Dining-Table-1.jpg);
+    background-position: center left;
+    background-size: auto;
+    font-size: 0;
+}
+
+.fwrap {
+    width: 900px;
+    margin-left: calc(50% - 400px);
+    padding: 100px 0;
+}
+
+.fwrap > div {
+    display: inline-block;
+   
+}
+
+.fwrap>div:first-child{
+    width: 600px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 22px;
+    padding: 20px;
+    color:  white;
+    background-color: rgba(157, 157, 157, 0.345);
+    border-radius: 5px;
+}
+
+.fwrap>div:nth-child(2) {
+    width: 300px;
+    padding: 20px;
+    
+}
+
+h1 {
+    font-size: 35px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+h1+p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+div>form>label {
+    display: none;
+}
+
+div>form input,textarea{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+div>form input,
+textarea::placeholder{
+    font-weight: bold;
+}
+
+form>input[type="submit"] {
+    background-color: rgb(255, 150, 29);
+    color: #fff;  
+}
+
+form+p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
