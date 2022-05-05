@@ -17,7 +17,7 @@ body{
 }
 
 .container {
-    margin-top: calc(50vh - 100px);
+    margin-top: calc(50vh - 200px);
     text-align: center;
     width: 700px;
     min-height: 200px;

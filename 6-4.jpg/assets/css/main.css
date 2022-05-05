@@ -11,26 +11,34 @@ body *{
     box-sizing:content-box;
     font-size: 0;
     width: 900px;
-    height: 250px;
-    /* background-color: aquamarine; */
     margin-left: calc(50% - 450px);
-    margin-top: 100px;
+    margin-top: 180px;
     font-size: 0;
     overflow: hidden;
-    border: 1px solid blue;
+    border: 1px solid rgb(82, 82, 82);
 }
 
 .container>div {
+    padding: 0;
     font-size: 15px;
-    width: 299px;
+    width: 300px;
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
 }
 
+.container>div:first-child, div:last-child {
+    padding:15px;
+}
+
 .container div:nth-child(2)>img {
-    width: 430px;
-
+    width: 500px;
+    
     box-sizing: border-box;
+    object-fit: cover;
+    vertical-align: bottom;
+}
 
+.container div:nth-child(2) {
+    background-color: red;
 }
